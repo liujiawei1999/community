@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Community</title>
+    <title>Publish</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/community.css">
 
 </head>
 <body>
@@ -14,7 +15,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Community</span>
             </button>
             <a class="navbar-brand" href="#">Community</a>
@@ -45,12 +47,37 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+<div class="container-fluid" >
+    <div class="row" >
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
+            <hr>
 
+            <form action="">
+                <div class="form-group">
+                    <label for="title">问题标题(简单扼要)</label>
+                    <input type="text" class="form-control" id="title" placeholder="问题标题">
+                </div>
+                <div class="form-group">
+                    <label for="title">问题补充(必填，请参照右侧提示)：</label>
+                    <textarea name="description" class="form-control" id="description" cols="30" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="title">添加标签</label>
+                    <input type="text" class="form-control" id="tag" placeholder="输入标签,以逗号隔开">
+                </div>
 
-
-
-
-
+                <button type="button" class="btn btn-success">发布</button>
+            </form>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <h3>问题发起指南</h3>
+            - 问题标题：请用精简的语言描述您发布的问题,不超过25字
+            - 问题补充：详细补充您的问题,并确保问题描述清晰直观,并提供一些相关的资料
+            - 选择标签：选择一个或多个合适的标签,用逗号隔开,每个标题不超过18个字
+        </div>
+    </div>
+</div>
 
 
 
